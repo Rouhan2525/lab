@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Date</title>
+</head>
+
+<body>
+    <h2>Date and Time</h2>
+    <script>
+        const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+        const date = new Date();
+        const number = date.getDay();
+        document.write("today is :" +days[number]+"<br/>");
+        const hh = date.getHours().toString().padStart(2, '0');
+        const mm = date.getMinutes().toString().padStart(2,'0');
+        const ss = date.getSeconds().toString().padStart(2,'0');
+        document.write("time is :"+hh+":"+mm+":"+ ss);
+    </script>
+</body>
+
+</html>
